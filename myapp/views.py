@@ -20,7 +20,7 @@ def index(request):
 #     # return render(request, "counter.html", dictionaryText)
 #     return render(request, "counter.html", dictionaryLengthOfText)
 def counter(request):
-    text = request.POST["text"]
+    text = request.GET["text"]
     lengthOfText = len(text.split())
 
     # dictionaryText = {"text": text}
